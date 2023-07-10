@@ -1,0 +1,109 @@
+body {
+    font-family: 'Nunito', Calibri, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    background-color: #EDEBE9;
+    color: #110404;
+}
+
+.container {
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header-div {
+    margin: 0;
+    padding: 1em 1.5em;
+    background-color: #ff686b;
+    box-shadow: 0 1px 3px #c1c0bf;
+    /* border: 1px solid blue; */
+}
+
+.header-div-h1 {
+    font-size: 1.5rem;
+    color: #FBFAFA;
+}
+
+/* Note card */
+.note-space {
+    min-height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.note-div {
+    background-color: #FBFAFA;
+    border-radius: 20px;
+    box-shadow: -1px 1px 3px #c1c0bf;
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+
+
+}
+
+.note-div-h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.375rem;
+}
+
+.note-div-p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+    /* background-color: #EDEBE9; */
+    text-align: center;
+    padding: 1rem;
+    /* border: 1px solid violet; */
+    display: grid;
+    align-items: flex-end;
+}
+
+.footer-p {
+    color: #b8b7b6;
+    font-size: 0.85rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 90%;
+        margin: 1.75rem auto;
+    }
+
+    .note-space {
+        min-height: 75vh;
+        /* display: grid; */
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 95%;
+        margin: 1.75rem auto;
+    }
+
+    .note-space {
+        min-height: 75vh;
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 0.75rem;
+    }
+}
